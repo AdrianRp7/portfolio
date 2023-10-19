@@ -11,15 +11,21 @@ import { RouterLink, RouterView } from 'vue-router'
           <v-img class="rounded-circle" width="52px" src="img/logo.jpg"></v-img>
         </template>
         <template v-slot:append>
-          <RouterLink class="text-black" to="/">
+          <a class="text-black" href="#home">
             <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.home') }}</v-btn>
-          </RouterLink>
-          <RouterLink class="text-black" to="/about">
+          </a>
+          <a class="text-black" href="#about">
             <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
-          </RouterLink>
-          <RouterLink class="text-black" to="/skills">
+          </a>
+          <a class="text-black" href="#experience">
+            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.experience') }}</v-btn>
+          </a>
+          <a class="text-black" href="#projects">
+            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.projects') }}</v-btn>
+          </a>
+          <a class="text-black" href="#skills">
             <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.skill') }}</v-btn>
-          </RouterLink>
+          </a>
           <v-menu open-on-hover>
           <template v-slot:activator="{ props }">
             <v-btn

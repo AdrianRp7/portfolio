@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <h2 class="text-h4 text-primary text-center mb-5">{{ $t('home.aboutMe.title') }}</h2>
+        <h2 class="text-h4 text-primary text-center mb-5">{{ $t('home.proyects.title') }}</h2>
         <v-row class="projects box-shadow-project mb-5" v-for="n in 4">
             <a class="text-decoration-none d-flex w-100" target="_blank" :href="`${$t('home.proyects.proyect.' + n + '.url')}`">
                 <v-col cols="12" md="3" order="2" order-md="1">

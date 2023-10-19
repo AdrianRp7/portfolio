@@ -3,6 +3,8 @@ export default {
         home: 'home',
         aboutMe: "About me",
         skill: "Skills",
+        projects: "Proyectos",
+        experience: "Experience",
         languages: "Languages",
         languagesText: {
             es: "Spanish",

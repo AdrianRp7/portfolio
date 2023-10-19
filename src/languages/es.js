@@ -3,7 +3,9 @@ export default {
         home: 'home',
         aboutMe: "sobre mí",
         skill: "habilidades",
-        languages: "lenguajes",
+        experience: "Experiencia",
+        projects: "Proyectos",
+        languages: "Idiomas",
         languagesText: {
             es: "Español",
             en: "Inglés"
