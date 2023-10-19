@@ -1,0 +1,76 @@
+
+
+body #app .v-layout{
+    //Global styles
+    *,*:after {
+        font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3, h4, h5 {
+        font-family: 'Asap', sans-serif;
+    }
+
+    //Global utilities
+    .text-white {
+        color: #FFF!important;
+    }
+
+    .white-space {
+        white-space: pre-line;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+    
+    .sections {
+        padding: 20px 20px;
+        @media #{map-get($display-breakpoints, 'md-and-up')} {
+            padding: 80px 0px;
+        }
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .opacity-1 {
+        opacity: 1!important;
+    }
+
+    //Fix things in vuetify
+    @media (min-width: 1920px) {
+        .v-container {
+          max-width: 1200px;
+        }
+      }
+}
+
+//Animations
+@keyframes fade-top-movement {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 5%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes height-increasement {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes scale-hover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}

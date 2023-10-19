@@ -1,0 +1,8 @@
+$font-family: 'Poppins', sans-serif;
+$head-family: 'Asap', sans-serif;
+//use forward in order to use the colors
+@forward 'vuetify/settings' with (
+  $button-height: 40px,
+  $heading-font-family: $head-family,
+  $body-font-family: $font-family
+);
