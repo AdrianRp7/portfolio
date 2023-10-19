@@ -68,7 +68,7 @@ export default {
             }
         },
         proyects: {
-            title: "Proyect",
+            title: "Project",
             proyect: {
                 1: {
                     image: 'Busscollab.jpg',

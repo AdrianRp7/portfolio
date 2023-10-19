@@ -6,14 +6,16 @@ import { RouterLink, RouterView } from 'vue-router'
   <!-- <RouterLink to="/">Home</RouterLink>
   <RouterLink to="/about">About</RouterLink> -->
     <v-layout class="test">
-      <v-app-bar  id="app-bar" class="max-width-bar text-grey-darken-3" flat title="Adrián Ródenas" v-once>
+      <v-app-bar  id="app-bar" class="max-width-bar text-grey-darken-3" flat v-once>
         <template v-slot:prepend>
-          <v-img class="rounded-circle" width="52px" src="img/logo.jpg"></v-img>
+          <a href="#home">
+            <v-img class="rounded-circle" width="30px" src="logo-3.png"></v-img>
+          </a>
         </template>
         <template v-slot:append>
-          <a class="text-black" href="#home">
+          <!-- <a class="text-black" href="#home">
             <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.home') }}</v-btn>
-          </a>
+          </a> -->
           <a class="text-black" href="#about">
             <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
           </a>

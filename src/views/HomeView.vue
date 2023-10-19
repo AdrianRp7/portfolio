@@ -8,8 +8,8 @@
 </script>
 
 <template>
-  <v-container class="sections">
-    <v-row class="position-relative" id="home">
+  <v-container class="sections" id="home">
+    <v-row class="position-relative">
       <v-col cols="12" md="6" class="d-flex flex-column justify-center flex-grow-1 animation-fade-top ">
         <h1 class="text-h3 text-md-h1 text-shades-black">{{$t('home.title')}} <span class="text-primary">Adrián</span></h1>
         <p class="mt-6 text-grey-darken-3">{{ $t('home.subtitle') }}</p>
@@ -35,6 +35,15 @@
   <RoadMap id="experience"></RoadMap>
   <Proyects id="projects"></Proyects>
   <Skills id="skills"></Skills>
+
+  <!-- <div class="position-relative">
+    <svg height="250" width="450">
+      <polygon points="220,10 50,210 400,210" style="fill:#42b883;" />
+    </svg>
+    <svg height="250" width="450">
+      <polygon points="220,10 50,210 400,210" style="fill:#ED9B40;" />
+    </svg>
+  </div> -->
 </template>
 
 <style scoped>
