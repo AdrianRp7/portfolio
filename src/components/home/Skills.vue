@@ -34,7 +34,6 @@
     import IconNuxt from '@/components/icons/frameworks/IconNuxt.vue';
 
     // import { IconCss3, IconGit, IconHtml5, IconJavascript, IconJquery, IconLaravel, IconMysql, IconPhp, IconPrestashop, IconSass, IconTypescript, IconVue, IconWordpress} from '@/components/icons/frameworks/';
-    import frameworks from '@/components/icons/frameworks/';
 
     const productStore = useProductsStore();
 
@@ -60,7 +59,7 @@
         }
     });
 
-    function getNameIcon(name) {
+    function getNameIcon(name: string) {
         return 'Icon' + name;
     }
 </script>
