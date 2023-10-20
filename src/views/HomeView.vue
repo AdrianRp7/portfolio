@@ -36,14 +36,13 @@
   <Proyects id="projects"></Proyects>
   <Skills id="skills"></Skills>
 
-  <!-- <div class="position-relative">
-    <svg height="250" width="450">
-      <polygon points="220,10 50,210 400,210" style="fill:#42b883;" />
-    </svg>
-    <svg height="250" width="450">
-      <polygon points="220,10 50,210 400,210" style="fill:#ED9B40;" />
-    </svg>
-  </div> -->
+  <v-container >
+    <v-footer>
+      <p class="text-center w-100">
+        2023 - Adrián Ródenas
+      </p>
+    </v-footer>
+  </v-container>
 </template>
 
 <style scoped>
