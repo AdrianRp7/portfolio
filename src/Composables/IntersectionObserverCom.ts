@@ -9,7 +9,6 @@ export function IntersectionObserverCom(target: string, classCss :string) {
     function isVisible(entries: IntersectionObserverEntry[], observer: IntersectionObserver) : void {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                console.log("adfdsfad")
                 entry.target.classList.add(classCss);
                 observer.unobserve(entry.target);
             }

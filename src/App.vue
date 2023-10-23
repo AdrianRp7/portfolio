@@ -1,68 +1,132 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { ref } from 'vue';
+import type { Ref } from 'vue';
+import { RouterLink, RouterView } from 'vue-router';
+
+const drawer: Ref<boolean> = ref(false);
+
 </script>
 
 <template>
   <!-- <RouterLink to="/">Home</RouterLink>
   <RouterLink to="/about">About</RouterLink> -->
     <v-layout class="test">
+      <v-navigation-drawer v-model="drawer" :width="'100%'" :scrim="false" >
+        <v-container class="d-flex flex-column">
+          <div class="d-flex align-center justify-space-between mb-6">
+            <a href="#home" class="pl-3">
+              <v-img class="rounded-circle" width="30px" src="logo-3.png"></v-img>
+            </a>
+            <v-btn icon="mdi-close" variant="plain" @click="drawer = !drawer">
+            </v-btn>
+          </div>
+          <a class="text-black mb-4" href="#about">
+            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
+          </a>
+          <a class="text-black mb-4" href="#experience">
+            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.experience') }}</v-btn>
+          </a>
+          <a class="text-black mb-4" href="#projects">
+            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.projects') }}</v-btn>
+          </a>
+          <a class="text-black mb-4" href="#skills">
+            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.skill') }}</v-btn>
+          </a>
+          <v-menu open-on-hover>
+              <template v-slot:activator="{ props }">
+                <v-btn
+                v-bind="props"
+                size="small"
+                density="compact"
+                variant="plain"
+                class="text-capitalize justify-start opacity-1 text-grey-darken-4"
+                append-icon="mdi-chevron-down "
+              >
+              {{ $t('navbar.languages') }}
+                
+              </v-btn>
+              </template>
+              <v-list>
+                <v-list-item
+                >
+                  <v-list-item-title v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale" @click="$i18n.locale=locale">
+                    <v-btn
+                    outlined
+                    flat
+                    size="small"
+                    density="compact"
+                    class="text-capitalize text-grey-darken-4"
+                  >
+                    {{ $t(`navbar.languagesText.${locale}`) }}
+                </v-btn>
+                  </v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+        </v-container>
+      </v-navigation-drawer>
       <v-app-bar  id="app-bar" class="max-width-bar text-grey-darken-3" flat v-once>
         <template v-slot:prepend>
+          <v-app-bar-nav-icon class="d-block d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
           <a href="#home">
             <v-img class="rounded-circle" width="30px" src="logo-3.png"></v-img>
           </a>
         </template>
-        <template v-slot:append>
-          <!-- <a class="text-black" href="#home">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.home') }}</v-btn>
-          </a> -->
-          <a class="text-black" href="#about">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
-          </a>
-          <a class="text-black" href="#experience">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.experience') }}</v-btn>
-          </a>
-          <a class="text-black" href="#projects">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.projects') }}</v-btn>
-          </a>
-          <a class="text-black" href="#skills">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.skill') }}</v-btn>
-          </a>
-          <v-menu open-on-hover>
-          <template v-slot:activator="{ props }">
-            <v-btn
-            outlined
-            color="black"
-            v-bind="props"
-            size="small"
-            density="compact"
-            class="text-capitalize text-grey-darken-4"
-          >
-          {{ $t('navbar.languages') }}
-            
-          </v-btn>
-          </template>
-          <v-list>
-            <v-list-item
-            >
-              <v-list-item-title v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale" @click="$i18n.locale=locale">
+        <template v-slot:append >
+          <div class="d-none d-md-block">
+              <a class="text-black" href="#about">
+                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
+              </a>
+              <a class="text-black" href="#experience">
+                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.experience') }}</v-btn>
+              </a>
+              <a class="text-black" href="#projects">
+                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.projects') }}</v-btn>
+              </a>
+              <a class="text-black" href="#skills">
+                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.skill') }}</v-btn>
+              </a>
+            <v-menu open-on-hover>
+              <template v-slot:activator="{ props }">
                 <v-btn
                 outlined
-                flat
+                color="black"
+                v-bind="props"
                 size="small"
                 density="compact"
                 class="text-capitalize text-grey-darken-4"
+                append-icon="mdi-chevron-down "
               >
-                {{ $t(`navbar.languagesText.${locale}`) }}
-            </v-btn>
-              </v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
+              {{ $t('navbar.languages') }}
+                
+              </v-btn>
+              </template>
+              <v-list>
+                <v-list-item
+                >
+                  <v-list-item-title v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale" @click="$i18n.locale=locale">
+                    <v-btn
+                    outlined
+                    flat
+                    size="small"
+                    density="compact"
+                    class="text-capitalize text-grey-darken-4"
+                    
+                  >
+                    {{ $t(`navbar.languagesText.${locale}`) }}
+                </v-btn>
+                  </v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+          </div>
+          <!-- <a class="text-black" href="#home">
+            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.home') }}</v-btn>
+          </a> -->
           <!-- <v-icon class="text-grey-darken-4" icon="mdi-cart-outline" size="small"/> -->
-        </template>
-        
+        </template>  
       </v-app-bar>
+      
       <v-main>
         <RouterView />
       </v-main>
@@ -79,8 +143,21 @@ import { RouterLink, RouterView } from 'vue-router'
   }
 }
 
+:deep(.v-navigation-drawer) {
+  width: 100%;
+}
+
 .test {
   height: 200vh;
+}
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+  :deep(.v-toolbar__append) {
+    display: none!important;
+  }
+  :deep(.v-toolbar__prepend) {
+    margin: 0 auto!important;
+  }
 }
 
 
