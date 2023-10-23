@@ -159,9 +159,6 @@ const drawer: Ref<boolean> = ref(false);
   :deep(.v-toolbar__prepend) {
     margin: 0 auto!important;
   }
-  :deep(.v-toolbar__content) {
-    width: fit-content;
-  }
 }
 
 
