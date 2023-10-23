@@ -65,8 +65,9 @@ const drawer: Ref<boolean> = ref(false);
             </v-menu>
         </v-container>
       </v-navigation-drawer>
-      <v-app-bar  id="app-bar" class="max-width-bar text-grey-darken-3" flat v-once>
+      <v-app-bar  id="app-bar" class="max-width-bar text-grey-darken-3" flat v-once app>
         <template v-slot:prepend>
+          
           <v-app-bar-nav-icon class="d-block d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
           <a href="#home">
             <v-img class="rounded-circle" width="30px" src="logo-3.png"></v-img>
@@ -157,6 +158,9 @@ const drawer: Ref<boolean> = ref(false);
   }
   :deep(.v-toolbar__prepend) {
     margin: 0 auto!important;
+  }
+  :deep(.v-toolbar__content) {
+    width: fit-content;
   }
 }
 

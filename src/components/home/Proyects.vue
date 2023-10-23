@@ -2,20 +2,23 @@
     <v-container>
         <h2 class="text-h4 text-primary text-center mb-5">{{ $t('home.proyects.title') }}</h2>
         <v-row class="projects box-shadow-project mb-5" v-for="n in 4">
-            <a class="text-decoration-none d-flex w-100" target="_blank" :href="`${$t('home.proyects.proyect.' + n + '.url')}`">
+            
                 <v-col cols="12" md="3" order="2" order-md="1">
-                    <v-img class="animation-scale" :src="`img/proyects/${$t('home.proyects.proyect.' + n + '.image')}`"></v-img>
+                    <a class="text-decoration-none d-flex w-100" target="_blank" :href="`${$t('home.proyects.proyect.' + n + '.url')}`">
+                        <v-img class="animation-scale" :src="`img/proyects/${$t('home.proyects.proyect.' + n + '.image')}`"></v-img>
+                    </a>
                 </v-col>
-                <v-col cols="12" md="9" order="2" order-md="1">
-                    <v-card elevation="0">
-                        <v-card-title class="text-shades-black d-flex">{{$t('home.proyects.proyect.' + n + '.title')}}</v-card-title>
-                        <v-card-text class="text-grey-darken-3">{{$t('home.proyects.proyect.' + n + '.description')}}</v-card-text>
-                        <v-card-actions>
-                            <ChipGroup :chainWithSkills="`${$t('home.proyects.proyect.' + n + '.tecnologies')}`.split(',')"></ChipGroup>
-                        </v-card-actions>
-                    </v-card>
+                <v-col cols="12" md="9" order="1" order-md="1">
+                    <a class="text-decoration-none d-flex w-100" target="_blank" :href="`${$t('home.proyects.proyect.' + n + '.url')}`">
+                        <v-card elevation="0">
+                            <v-card-title class="text-shades-black d-flex">{{$t('home.proyects.proyect.' + n + '.title')}}</v-card-title>
+                            <v-card-text class="text-grey-darken-3">{{$t('home.proyects.proyect.' + n + '.description')}}</v-card-text>
+                            <v-card-actions>
+                                <ChipGroup :chainWithSkills="`${$t('home.proyects.proyect.' + n + '.tecnologies')}`.split(',')"></ChipGroup>
+                            </v-card-actions>
+                        </v-card>
+                    </a>
                 </v-col>
-            </a>
         </v-row>
     </v-container>
 </template>
