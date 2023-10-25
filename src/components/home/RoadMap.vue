@@ -2,7 +2,6 @@
     <v-container class="sections">
         <h2 class="text-h4 mb-5 text-primary">Experience</h2>
         <v-row>
-            
             <v-col cols="12" class="d-none flex-column d-md-flex">
                 <v-timeline class="mt-6" side="end" line-color="secondary">
                         <v-timeline-item
