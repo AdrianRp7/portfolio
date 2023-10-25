@@ -13,18 +13,16 @@ export default {
     },
     home: {
         title: 'Hello, my name is ',
-        subtitle: "I'm a passionate Senior Front-end Developer, particularly fond of Vue. I enjoy working on innovative projects and testing. In my free time, I'm a creative board games enthusiast.",
+        subtitle: "I'm a passionate Senior Full-stack Developer, particularly fond of Vue. I enjoy working on innovative projects and testing. In my free time, I'm a creative board games enthusiast.",
         aboutMe: {
             title: "About me",
             description: `My first encounter with computer science was thanks to my cousin, a programmer. The first time I saw him in action, it was fascinating. Now, many years later, I transform designs into functional experiences from the Front-End.
-
-            While my early years in my career were focused on Back-End, don't let that confuse you. The last four years, I have dedicated myself entirely to specialize in Front-End development with Vue.
             
-            During this time, I've had the opportunity to work on various projects, allowing me to develop skills such as teamwork, coordination, and team leadership, as well as improving my programming logic, among others.
+            Since I began my journey in web development 8 years ago, with the last <strong class="text-primary">four years centered on Front-End part</strong>. I've had the opportunity to work on various projects, allowing me to develop skills such as <strong class="text-primary">teamwork, coordination, and team leadership</strong>, as well as improving my programming logic, among others.
             
             Outside the realm of programming, I enjoy creating board games. To me, it's a similar process to creating software. First, conceive the basic idea, transform it into something playable, define the rules, and verify its correctness. Then, repeatedly test the game to refine it, and finally, present it to the user to obtain the necessary feedback and perfect it. The best part is when it's nearing completion, and you see people playing with the game.
             
-            In the future, I aspire to continue working in Front-End to design new interfaces and keep elevating my programming and logic skills.`
+            In the future, I aspire to continue working in Full-stack to design new interfaces and keep elevating my programming and logic skills.`
         },
         skills: {
             title: "Skills",

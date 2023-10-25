@@ -85,7 +85,7 @@
         /* -webkit-box-shadow: 0px 0px 1px 0px rgba(66, 184, 131, .75);
         -moz-box-shadow: 0px 0px 1px 0px rgba(66, 184, 131, .75);
         box-shadow: 0px 0px 1px 0px rgba(66, 184, 131, .75); */
-        box-shadow: rgba(66, 184, 131, 0.5) 0px 6px 24px 0px, rgba(66, 184, 131, 0.3) 0px 0px 0px 1px;
+        box-shadow: rgba(66, 184, 131, 0.3) 0px 6px 24px 0px, rgba(66, 184, 131, 0.3) 0px 0px 20px 1px;
     }
 
 

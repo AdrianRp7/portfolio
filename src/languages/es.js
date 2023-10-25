@@ -16,13 +16,11 @@ export default {
         subtitle: 'Programador senior Front-End apasionado por Vue, amante de proyectos innovadores y testing. Creativo de juegos de mesa en tiempo libre.',
         aboutMe: {
             title: "Sobre mí",
-            description: `Mi primer encuentro con la informática fue gracias a mi primo, un programador. La primera vez que lo vi en acción, fue fascinante. Ahora, muchos años después, transformo diseños en experiencias funcionales desde la parte Front-End.
+            description: `Mi primer encuentro con la informática fue gracias a mi primo, un programador. La primera vez que lo vi en acción, fue fascinante. Ahora, muchos años después, transformo diseños en experiencias funcionales.
             
-            Si bien mis primeros años laborales estuvieron enfocados en el Back-End, no dejes que eso te confunda. Los últimos cuatro años los he dedicado por completo a especializarme en el desarrollo Front-End con Vue.
+            Desde que comencé hace 8 años el desarrollo web, con los últimos <strong class="text-primary">4 años centrados en el Front-End</strong>. He tenido la oportunidad de trabajar en diversos proyectos, lo que me ha permitido desarrollar habilidades como <strong class="text-primary">trabajo en equipo, coordinación y liderazgo de equipos de desarrollo</strong>, así como mejorar mi lógica de programación, entre otras.
             
-            Durante este tiempo, he tenido la oportunidad de trabajar en diversos proyectos, lo que me ha permitido desarrollar habilidades como trabajo en equipo, coordinación y liderazgo de equipos de desarrollo, así como mejorar mi lógica de programación, entre otras.
-            
-            Fuera del ámbito de la programación, disfruto crear juegos de mesa. Para mí, es un proceso similar a la creación de software. Primero, concebir la idea base, transformarla en algo jugable, definir las reglas y verificar su corrección. Luego, testear el juego repetidamente hasta pulirlo y, finalmente, presentarlo al usuario para obtener el feedback necesario y perfeccionarlo. La mejor parte, es cuando está  terminando y ves a la gente jugando con el juego.
+            <strong class="text-primary">Fuera del ámbito de la programación, disfruto crear juegos de mesa</strong>. Para mí, es un proceso similar a la creación de software. Primero, concebir la idea base, transformarla en algo jugable, definir las reglas y verificar su corrección. Luego, testear el juego repetidamente hasta pulirlo y, finalmente, presentarlo al usuario para obtener el feedback necesario y perfeccionarlo. La mejor parte, es cuando está  terminando y ves a la gente jugando con el juego.
             
             En el futuro, aspiro a seguir trabajando en Front-End para diseñar nuevas interfaces y continuar elevando mi nivel de programación y lógica.`
         }, 
