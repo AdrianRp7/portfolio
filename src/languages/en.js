@@ -5,7 +5,7 @@ export default {
         skill: "Skills",
         projects: "Proyectos",
         experience: "Experience",
-        languages: "Languages",
+        languages: "Change Language",
         languagesText: {
             es: "Spanish",
             en: "English"

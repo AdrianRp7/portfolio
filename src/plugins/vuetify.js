@@ -14,13 +14,23 @@ export const vuetifyConfiguration = createVuetify({
     },
     theme: {
         themes: {
+          dark: false,
           light: {
-            dark: false,
             colors: {
               //https://coolors.co/visualizer/42b883-ed9b40-fefffe
-              primary: "#42b883", // #E53935
+              primary: "#42b883", // #42b883
               secondary: "#ED9B40", // #FFCDD2
               accent: '#ffffff',
+              background: '#2E4057',
+              surface: '#2E4057',
+              'grey-darken-2': "#31445E",
+              'grey-darken-4': "#EDEDED",
+              'grey-darken-3': "#EDEDED",
+              'shades-black ': "#EDEDED",
+              'shades-white ': "#EDEDED",
+              //fondo: 2E4057
+              //#DAB6C4
+              //FFA0AC
             }
           },
         },

@@ -17,7 +17,7 @@
                         
                         <v-card elevation="0">
                             <v-card-title class="text-shades-black d-flex">{{ $t(`home.experience.experiencias.${item.id}.title`) }} </v-card-title>
-                            <v-card-subtitle class="text-shades-black opacity-1">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }})</v-card-subtitle>
+                            <v-card-subtitle class="text-shades-black opacity-1">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }}) | {{ $t(`home.experience.experiencias.${item.id}.dates`) }}</v-card-subtitle>
                             <v-card-text class="text-grey-darken-3">{{ $t(`home.experience.experiencias.${item.id}.description`) }}</v-card-text>
                             <v-card-actions>
                                 <ChipGroup :chainWithSkills="$t(`home.experience.experiencias.${item.id}.skills`).split(',')"></ChipGroup>
@@ -31,7 +31,7 @@
                 <div>
                     <v-card class="" elevation="0" v-for="item in items" :key="item.id">
                         <v-card-title class="text-secondary px-0 d-flex">{{ $t(`home.experience.experiencias.${item.id}.title`) }} </v-card-title>
-                        <v-card-subtitle class="text-shades-black opacity-1 px-0">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }})</v-card-subtitle>
+                        <v-card-subtitle class="text-shades-black opacity-1 px-0">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }}) | {{ $t(`home.experience.experiencias.${item.id}.dates`) }}</v-card-subtitle>
                         <v-card-text class="text-grey-darken-3 px-0">{{ $t(`home.experience.experiencias.${item.id}.description`) }}</v-card-text>
                         <v-card-actions>
                             <ChipGroup :chainWithSkills="$t(`home.experience.experiencias.${item.id}.skills`).split(',')"></ChipGroup>

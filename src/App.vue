@@ -65,6 +65,7 @@ const drawer: Ref<boolean> = ref(false);
             </v-menu>
         </v-container>
       </v-navigation-drawer>
+      
       <v-app-bar  id="app-bar" class="max-width-bar text-grey-darken-3" flat v-once app>
         <template v-slot:prepend>
           
@@ -128,6 +129,7 @@ const drawer: Ref<boolean> = ref(false);
         </template>  
       </v-app-bar>
       
+      
       <v-main>
         <RouterView />
       </v-main>
@@ -136,6 +138,9 @@ const drawer: Ref<boolean> = ref(false);
 
 
 <style scoped lang="scss">
+.box-shadow-bar {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.7);
+}
 #app-bar {
   // border-bottom: 1px solid rgba(60, 60, 60, .29);
   :deep(.v-toolbar-title__placeholder) {
@@ -148,9 +153,6 @@ const drawer: Ref<boolean> = ref(false);
   width: 100%;
 }
 
-.test {
-  height: 200vh;
-}
 
 @media #{map-get($display-breakpoints, 'sm-and-down')} {
   :deep(.v-toolbar__append) {
@@ -160,15 +162,19 @@ const drawer: Ref<boolean> = ref(false);
     margin: 0 auto!important;
   }
 }
-
+.max-width-bar {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
+}
 
 @media #{map-get($display-breakpoints, 'lg-and-up')} {
   .max-width-bar {
-    max-width: 1200px;
-    display: block;
-    margin: 0 auto;
+    :deep(.v-toolbar__content) {
+      max-width: 1200px;
+      margin: 0 auto;
+      // display: block;
+    }
   }
-
+  
   .v-toolbar.v-toolbar--flat.v-toolbar--density-default {
     transform: translate(-50%, 0%)!important;
     left: 50%!important;

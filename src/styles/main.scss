@@ -2,6 +2,10 @@
     scroll-behavior: smooth !important;
 }
 
+.v-layout {
+    background-color: rgb(var(--v-theme-surface)) !important;
+}
+
 body #app .v-layout{
     //Global styles
     *,*:after {
@@ -22,6 +26,10 @@ body #app .v-layout{
 
     .position-relative {
         position: relative;
+    }
+
+    .color-vuetify-background {
+        color: rgb(var(--v-theme-background));
     }
     
     .sections {
@@ -45,6 +53,18 @@ body #app .v-layout{
           max-width: 1200px;
         }
       }
+    
+    .v-chip__content {
+        color: rgb(var(--v-theme-shades-white));
+    }
+
+    .v-container--fluid.lighter {
+        background-color: rgb(var(--v-theme-grey-darken-2));
+
+        .v-card {
+            background-color: rgb(var(--v-theme-grey-darken-2));
+        }
+    }
 }
 
 //Animations

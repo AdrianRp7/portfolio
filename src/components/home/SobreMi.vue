@@ -11,7 +11,7 @@
                 <v-img src="img/logo.jpg" srcset="img/logo.jpg 400w, img/adrian_rodenas_pico.jpg 512w" sizes="(max-width:400px) 400px, 512px"></v-img>
             </v-col>
             <v-col class="pt-0" order="1" order-md="2" cols="12" md="7">
-                <p class="mt-6 white-space">
+                <p class="mt-6 white-space text-shades-white">
                     {{ $t('home.aboutMe.description') }}
                 </p>
             </v-col>
