@@ -49,7 +49,7 @@ body #app .v-layout{
 
     //Fix things in vuetify
     @media (min-width: 1920px) {
-        .v-container {
+        .v-container:not(.v-container--fluid) {
           max-width: 1200px;
         }
       }
@@ -57,12 +57,14 @@ body #app .v-layout{
     .v-chip__content {
         color: rgb(var(--v-theme-shades-white));
     }
-
-    .v-container--fluid.lighter {
-        background-color: rgb(var(--v-theme-grey-darken-2));
-
-        .v-card {
+    .v-container--fluid {
+        &.lighter {
+    
             background-color: rgb(var(--v-theme-grey-darken-2));
+    
+            .v-card {
+                background-color: rgb(var(--v-theme-grey-darken-2));
+            }
         }
     }
 }

@@ -83,13 +83,20 @@ export default {
                     tecnologies: "Sass-F, HTML5-F, Nuxt-F, Vue.js-F, Javascript-F, Css-F"
                 },
                 3: {
+                    image: 'idc.jpg',
+                    url: 'https://es.idcgames.com/',
+                    title: 'IDC Games',
+                    description: "Se creo mediante Laravel y Vue la parte de la web del perfil de usuario (horas jugadas, cambio de datos, imágenes del perfil, etc.)",
+                    tecnologies: "Sass-F, HTML5-F, Vue.js-F, Javascript-F, Css-F, Php-B, Laravel-B",
+                },
+                4: {
                     image: 'cms.jpg',
                     url: 'https://canaldenunciascms.com/',
                     title: 'Canal de denuncias',
                     description: "It is a web application for medium-sized companies to have an internal reporting application for employees and suppliers",
                     tecnologies: "Sass-F, HTML5-F, Vue.js-F, Css-F, Php-B, Mysql-B"
                 },
-                4: {
+                5: {
                     image: 'digitalizatutienda.jpg',
                     url: 'https://digitalizatutienda.com/',
                     title: 'Digitaliza tu tienda',

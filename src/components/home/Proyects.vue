@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <h2 class="text-h4 text-primary text-center mb-9">{{ $t('home.proyects.title') }}</h2>
-        <v-row class="projects box-shadow-project mb-5" align="center" v-for="n in 4" >
+        <v-row class="projects box-shadow-project mb-5" align="center" v-for="n in 5" >
                 <v-col cols="12" md="3" order="2" order-md="1">
                     <a class="text-decoration-none d-flex w-100" target="_blank" :href="`${$t('home.proyects.proyect.' + n + '.url')}`">
                         <v-img class="animation-scale" :src="`img/proyects/${$t('home.proyects.proyect.' + n + '.image')}`"></v-img>
