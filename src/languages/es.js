@@ -94,7 +94,7 @@ export default {
                     image: 'idc.jpg',
                     url: 'https://es.idcgames.com/',
                     title: 'IDC Games',
-                    description: "Se creo mediante Laravel y Vue la parte de la web del perfil de usuario (horas jugadas, cambio de datos, imágenes del perfil, etc.)",
+                    description: "El proyecto constaba de la creación de la parte del perfil de usuario de la web (horas jugadas, cambio de datos, imágenes del perfil, etc.)",
                     tecnologies: "Sass-F, HTML5-F, Vue.js-F, Javascript-F, Css-F, Php-B, Laravel-B",
                 },
                 4: {
