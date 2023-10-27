@@ -20,17 +20,7 @@
         </v-col>
         <v-col cols="12" md="6" class="animation-fade-top">
           <div class="d-flex forms flex-wrap">
-            <IconRectangle class="text-primary" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px;"></IconRectangle>
-            <svg class="text-secondary text-secondary" fill="#ED9B40" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.5757 1.42426C11.81 1.18995 12.1899 1.18995 12.4243 1.42426L22.5757 11.5757C22.81 11.81 22.8101 12.1899 22.5757 12.4243L12.4243 22.5757C12.19 22.81 11.8101 22.8101 11.5757 22.5757L1.42426 12.4243C1.18995 12.19 1.18995 11.8101 1.42426 11.5757L11.5757 1.42426Z" stroke="#ED9B40" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <IconRectangle class="color-vuetify-background"></IconRectangle>
-            <IconRectangle class="color-vuetify-background" stroke-color="#ED9B40" stroke-width="10"></IconRectangle>
-            <IconRectangle class="color-vuetify-background"></IconRectangle>
-            <IconCircle class="text-secondary"></IconCircle>
-            <IconRectangle class="text-secondary" style="border-top-left-radius: 70px; border-bottom-left-radius: 50px;border-top-right-radius: 70px;"></IconRectangle>
-            <IconRectangle class="color-vuetify-background"></IconRectangle>
-            <IconRectangle class="color-vuetify-background"></IconRectangle>
+            <img src="img/Layer_1.svg" alt="">
           </div>
         </v-col>
       </v-row>
