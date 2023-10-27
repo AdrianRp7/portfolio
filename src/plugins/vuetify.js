@@ -18,16 +18,16 @@ export const vuetifyConfiguration = createVuetify({
           light: {
             colors: {
               //https://coolors.co/visualizer/42b883-ed9b40-fefffe
-              primary: "#42b883", // #42b883
-              secondary: "#ED9B40", // #FFCDD2
+              primary: "#75CCB2", // #42b883
+              secondary: "#F7931E", // #FFCDD2
               accent: '#ffffff',
-              background: '#2E4057',
-              surface: '#2E4057',
-              'grey-darken-2': "#31445E",
-              'grey-darken-4': "#EDEDED",
-              'grey-darken-3': "#EDEDED",
-              'shades-black ': "#EDEDED",
-              'shades-white ': "#EDEDED",
+              background: '#FFF',
+              surface: '#FFF',
+              'grey-darken-2': "#FFF0DF",
+              'grey-darken-4': "#292929",
+              'grey-darken-3': "#292929",
+              'shades-black ': "#292929",
+              'shades-white ': "#292929",
               //fondo: 2E4057
               //#DAB6C4
               //FFA0AC
