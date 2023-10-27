@@ -19,9 +19,9 @@
           </a>
         </v-col>
         <v-col cols="12" md="6" class="animation-fade-top">
-          <div class="d-flex forms flex-wrap">
-            <img src="img/Layer_1.svg" alt="">
-          </div>
+          <!-- <div class="d-flex forms flex-wrap"> -->
+            <v-img src="img/Layer_1.svg" alt=""></v-img>
+          <!-- </div> -->
         </v-col>
       </v-row>
     </v-container>
