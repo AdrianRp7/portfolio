@@ -1,9 +1,9 @@
 <template>
     <v-container class="sections">
-        <h2 class="text-h4 mb-5 text-primary">Experience</h2>
+        <h1 class="text-h1 text-shades-black mb-6 pl-md-24 ">{{ $t(`home.experience.title`) }}</h1>
         <v-row>
             <v-col cols="12" class="d-none flex-column d-md-flex">
-                <v-timeline class="mt-6" side="end" line-color="secondary">
+                <v-timeline class="mt-6" side="end" line-color="secondary" align="start" truncate-line="start">
                         <v-timeline-item
                         v-for="item in items"
                         :key="item.id"
@@ -15,9 +15,9 @@
                         >
                         
                         <v-card elevation="0">
-                            <v-card-title class="text-shades-black d-flex">{{ $t(`home.experience.experiencias.${item.id}.title`) }} </v-card-title>
-                            <v-card-subtitle class="text-shades-black opacity-1">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }}) | {{ $t(`home.experience.experiencias.${item.id}.dates`) }}</v-card-subtitle>
-                            <v-card-text class="text-grey-darken-3">{{ $t(`home.experience.experiencias.${item.id}.description`) }}</v-card-text>
+                            <v-card-title class="text-shades-black d-flex text-body-1 font-weight-bold">{{ $t(`home.experience.experiencias.${item.id}.title`) }} </v-card-title>
+                            <v-card-subtitle class="text-shades-black opacity-1 text-body-1">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }}) | {{ $t(`home.experience.experiencias.${item.id}.dates`) }}</v-card-subtitle>
+                            <v-card-text class="text-grey-darken-3 pt-3 text-body-2">{{ $t(`home.experience.experiencias.${item.id}.description`) }}</v-card-text>
                             <v-card-actions>
                                 <ChipGroup :chainWithSkills="$t(`home.experience.experiencias.${item.id}.skills`).split(',')"></ChipGroup>
                             </v-card-actions>
@@ -29,9 +29,9 @@
             <v-col cols="12" class="d-flex flex-column d-md-none">
                 <div>
                     <v-card class="" elevation="0" v-for="item in items" :key="item.id">
-                        <v-card-title class="text-secondary px-0 d-flex">{{ $t(`home.experience.experiencias.${item.id}.title`) }} </v-card-title>
-                        <v-card-subtitle class="text-shades-black opacity-1 px-0">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }}) | {{ $t(`home.experience.experiencias.${item.id}.dates`) }}</v-card-subtitle>
-                        <v-card-text class="text-grey-darken-3 px-0">{{ $t(`home.experience.experiencias.${item.id}.description`) }}</v-card-text>
+                        <v-card-title class="text-secondary px-0 d-flex text-body-1 font-weight-bold">{{ $t(`home.experience.experiencias.${item.id}.title`) }} </v-card-title>
+                        <v-card-subtitle class="text-shades-black opacity-1 px-0 text-body-1">{{ $t(`home.experience.experiencias.${item.id}.subtitle`) }} ({{ $t(`home.experience.experiencias.${item.id}.functions`) }}) | {{ $t(`home.experience.experiencias.${item.id}.dates`) }}</v-card-subtitle>
+                        <v-card-text class="text-grey-darken-3 pt-3 px-0 text-body-2">{{ $t(`home.experience.experiencias.${item.id}.description`) }}</v-card-text>
                         <v-card-actions>
                             <ChipGroup :chainWithSkills="$t(`home.experience.experiencias.${item.id}.skills`).split(',')"></ChipGroup>
                         </v-card-actions>
@@ -80,4 +80,20 @@
             top:0;
         }
     }
+
+    @media #{map-get($display-breakpoints, 'md-and-up')} {
+        .time-line-object {
+            
+            :deep(.v-timeline-item__body) {
+                margin-top: -12px;
+            }
+        }
+    }
+
+    @media #{map-get($display-breakpoints, 'md-and-up')} {
+        .pl-md-24 {
+            padding-left: 98px;
+        }
+    }
+
 </style>

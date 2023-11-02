@@ -47,12 +47,29 @@ body #app .v-layout{
         opacity: 1!important;
     }
 
+    .v-main .v-row {
+        margin:0;
+    }
+
     //Fix things in vuetify
-    @media (min-width: 1920px) {
+    @media #{map-get($display-breakpoints, 'md-and-up')} {
         .v-container:not(.v-container--fluid) {
-          max-width: 1200px;
+            max-width: 1000px;
         }
-      }
+
+    }
+
+    @media #{map-get($display-breakpoints, 'lg-and-up')} {
+        .v-container:not(.v-container--fluid) {
+            max-width: 1200px;
+        }
+    }
+
+    // @media (min-width: 1920px) {
+    //     .v-container:not(.v-container--fluid) {
+    //       max-width: 1200px;
+    //     }
+    //   }
     
     .v-chip__content {
         color: rgb(var(--v-theme-shades-white));
@@ -66,6 +83,10 @@ body #app .v-layout{
                 background-color: rgb(var(--v-theme-grey-darken-2));
             }
         }
+    }
+
+    .font-weight-semibold600 {
+        font-weight: 600!important;
     }
 }
 

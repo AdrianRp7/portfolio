@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted, nextTick } from 'vue';
 import type { Ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
 
 const drawer: Ref<boolean> = ref(false);
+
+
 
 </script>
 
@@ -11,7 +13,7 @@ const drawer: Ref<boolean> = ref(false);
   <!-- <RouterLink to="/">Home</RouterLink>
   <RouterLink to="/about">About</RouterLink> -->
     <v-layout class="test">
-      <v-navigation-drawer v-model="drawer" :width="'100%'" :scrim="false" >
+      <v-navigation-drawer v-model="drawer" :width="'100%'" :scrim="false" disable-resize-watcher>
         <v-container class="d-flex flex-column">
           <div class="d-flex align-center justify-space-between mb-6">
             <a href="#home" class="pl-3">
@@ -21,23 +23,22 @@ const drawer: Ref<boolean> = ref(false);
             </v-btn>
           </div>
           <a class="text-black mb-4" href="#about">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
+            <v-btn flat class="text-capitalize text-grey-darken-4 font-weight-semibold600"  size="small">{{ $t('navbar.aboutMe') }}</v-btn>
           </a>
           <a class="text-black mb-4" href="#experience">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.experience') }}</v-btn>
+            <v-btn flat class="text-capitalize text-grey-darken-4 font-weight-semibold600"  size="small">{{ $t('navbar.experience') }}</v-btn>
           </a>
           <a class="text-black mb-4" href="#projects">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.projects') }}</v-btn>
+            <v-btn flat class="text-capitalize text-grey-darken-4 font-weight-semibold600"  size="small">{{ $t('navbar.projects') }}</v-btn>
           </a>
           <a class="text-black mb-4" href="#skills">
-            <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.skill') }}</v-btn>
+            <v-btn flat class="text-capitalize text-grey-darken-4 font-weight-semibold600"  size="small">{{ $t('navbar.skill') }}</v-btn>
           </a>
           <v-menu open-on-hover>
               <template v-slot:activator="{ props }">
                 <v-btn
                 v-bind="props"
                 size="small"
-                density="compact"
                 variant="plain"
                 class="text-capitalize justify-start opacity-1 text-grey-darken-4"
                 append-icon="mdi-chevron-down "
@@ -76,17 +77,17 @@ const drawer: Ref<boolean> = ref(false);
         </template>
         <template v-slot:append >
           <div class="d-none d-md-block">
-              <a class="text-black" href="#about">
-                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
+              <a class="text-black section-href" href="#about">
+                <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
               </a>
-              <a class="text-black" href="#experience">
-                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.experience') }}</v-btn>
+              <a class="text-black section-href" href="#experience">
+                <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.experience') }}</v-btn>
               </a>
-              <a class="text-black" href="#projects">
-                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.projects') }}</v-btn>
+              <a class="text-black section-href" href="#projects">
+                <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.projects') }}</v-btn>
               </a>
-              <a class="text-black" href="#skills">
-                <v-btn flat class="text-capitalize text-grey-darken-4" density="compact" size="small">{{ $t('navbar.skill') }}</v-btn>
+              <a class="text-black section-href" href="#skills">
+                <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.skill') }}</v-btn>
               </a>
             <v-menu open-on-hover>
               <template v-slot:activator="{ props }">
@@ -95,8 +96,7 @@ const drawer: Ref<boolean> = ref(false);
                 color="black"
                 v-bind="props"
                 size="small"
-                density="compact"
-                class="text-capitalize text-grey-darken-4"
+                class="text-capitalize text-grey-darken-4 font-weight-semibold600 text-body-2"
                 append-icon="mdi-chevron-down "
               >
               {{ $t('navbar.languages') }}
@@ -111,7 +111,6 @@ const drawer: Ref<boolean> = ref(false);
                     outlined
                     flat
                     size="small"
-                    density="compact"
                     class="text-capitalize text-grey-darken-4"
                     
                   >
@@ -178,6 +177,20 @@ const drawer: Ref<boolean> = ref(false);
   .v-toolbar.v-toolbar--flat.v-toolbar--density-default {
     transform: translate(-50%, 0%)!important;
     left: 50%!important;
+  }
+}
+
+.hightlight .border-botton-selected :deep(.v-btn__content){
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-color: rgb(var(--v-theme-secondary));
+    display: block;
+    position: absolute;
+    top: 85%;
+    border-radius: 10px;
   }
 }
 </style>

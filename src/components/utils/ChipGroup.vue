@@ -14,5 +14,7 @@
 <style scoped lang="scss">
     :deep(.v-chip__content) {
         color: #{map-get($shades, 'white')};
+        font-weight: 700;
+        font-size: 12px;
     }
 </style>

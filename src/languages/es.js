@@ -2,7 +2,7 @@ export default {
     navbar: {
         home: 'home',
         aboutMe: "sobre mí",
-        skill: "habilidades",
+        skill: "Competencias",
         experience: "Experiencia",
         projects: "Proyectos",
         languages: "Cambiar Idioma",
@@ -12,10 +12,23 @@ export default {
         }
     },
     home: {
-        title: 'Hola, mi nombre es ',
-        subtitle: 'Programador senior Front-End apasionado por Vue, amante de proyectos innovadores y testing. Creativo de juegos de mesa en tiempo libre.',
+        title: `Hola, soy 
+        <br>Adrián y soy<br>
+        Front-End.`,
+        subtitle: 'Programador senior Front-End apasionado por Vue, amante de proyectos innovadores y testing.<br> Creativo de juegos de mesa en tiempo libre.',
         aboutMe: {
             title: "Sobre mí",
+            firstSection: {
+                description1: "Mi primer encuentro con la informática fue gracias a mi primo, un programador. Cuando lo vi en acción, me resultó fascinante y decidí seguir sus pasos.",
+                descriptionBox: "Ahora me dedico a transformar diseños en <br>experiencias funcionales.",
+                description2: "Tras <strong>8 años trabajando en desarrollo web</strong> y <strong>4 años centrados en el Front-End</strong>, he tenido la oportunidad de trabajar en proyectos muy variados, permitiéndome mejorar el trabajo en equipo, la coordinación y el liderazgo de equipos de desarrollo, así como perfecionar mi lógica de programación."
+            },
+            secondSection: {
+                description1: "Fuera del ámbito de la informática, disfruto creando juegos de mesa, ya que es un <strong>proceso similar a la creación de software.</strong>",
+                description2: "Primero <strong>se concibe la idea base</strong>. A continuación <strong>se crea un prototipo</strong>, definiendo las reglas y revisándolo para eliminar posibles errores. Tras esto, <strong>se testea</strong> repetidas veces hasta pulirlo. Finalmente, <strong>se presenta al usuario</strong> para obtener el feedback necesario y perfeccionarlo. La mejor parte es cuando, una vez terminado, <strong>la gente disfruta de tu producto</strong>",
+                descriptionBox: "Aspiro a seguir trabajando en Front-End para<br> diseñar nuevas interfaces y elevar mi conocimiento<br> de programación y lógica."
+            },
+
             description: `Mi primer encuentro con la informática fue gracias a mi primo, un programador. La primera vez que lo vi en acción, fue fascinante. Ahora, muchos años después, transformo diseños en experiencias funcionales.
             
             Desde que comencé hace 8 años el desarrollo web, con los últimos <strong class="text-primary">4 años centrados en el Front-End</strong>. He tenido la oportunidad de trabajar en diversos proyectos, lo que me ha permitido desarrollar habilidades como <strong class="text-primary">trabajo en equipo, coordinación y liderazgo de equipos de desarrollo</strong>, así como mejorar mi lógica de programación, entre otras.
@@ -25,7 +38,7 @@ export default {
             En el futuro, aspiro a seguir trabajando en Front-End para diseñar nuevas interfaces y continuar elevando mi nivel de programación y lógica.`
         }, 
         skills: {
-            title: "Habilidades",
+            title: "Competencias",
             subtitle: "Minim deserunt pariatur ex et do mollit sint aute eiusmod ex ad labore aliqua. Consectetur cupidatat fugiat mollit nisi Lorem tempor. Mollit eiusmod amet nostrud ex nostrud nulla duis quis laborum amet velit laborum.",
         },
         experience: {
@@ -77,35 +90,35 @@ export default {
             title: "Proyectos",
             proyect: {
                 1: {
-                    image: 'Busscollab.jpg',
+                    image: 'Busscollab.png',
                     url: 'https://www.busscollab.com',
                     title: 'Busscollab',
                     description: "Busscollab es un marketplace para constructores, en ella pueden intercambiar productos, gestionar stock y vender productos.",
                     tecnologies: "Sass-F, HTML5-F, Nuxt-F, Vue.js-F, Javascript-F, Css-F"
                 },
                 2: {
-                    image: 'Youmalou.jpg',
+                    image: 'Youmalou.png',
                     url: 'https://youmalou.com',
                     title: 'Youmalou',
                     description: "Youmalou es una empresa de venta de viajes. En esta página tu puedes comprar tus vuelos o reservar habitaciones en hoteles",
                     tecnologies: "Sass-F, HTML5-F, Nuxt-F, Vue.js-F, Javascript-F, Css-F"
                 },
                 3: {
-                    image: 'idc.jpg',
+                    image: 'idc.png',
                     url: 'https://es.idcgames.com/',
                     title: 'IDC Games',
                     description: "El proyecto constaba de la creación de la parte del perfil de usuario de la web (horas jugadas, cambio de datos, imágenes del perfil, etc.)",
                     tecnologies: "Sass-F, HTML5-F, Vue.js-F, Javascript-F, Css-F, Php-B, Laravel-B",
                 },
                 4: {
-                    image: 'cms.jpg',
+                    image: 'cms.png',
                     url: 'https://canaldenunciascms.com/',
                     title: 'Canal de denuncias',
                     description: "Es un aplicación web para que empresas de mediano tamaño puedan tener una aplicación de denuncias internas para trabajadores y proveedores.",
                     tecnologies: "Sass-F, HTML5-F, Vue.js-F, Css-F, Php-B, Mysql-B"
                 },
                 5: {
-                    image: 'digitalizatutienda.jpg',
+                    image: 'digitalizatutienda.png',
                     url: 'https://digitalizatutienda.com/',
                     title: 'Digitaliza tu tienda',
                     description: "Es una página con un tema y plugins hechos a medida con wordpress para mostrar información relevante de la empresa.",

@@ -12,10 +12,22 @@ export default {
         }
     },
     home: {
-        title: 'Hello, my name is ',
-        subtitle: "I'm a passionate Senior Full-stack Developer, particularly fond of Vue. I enjoy working on innovative projects and testing. In my free time, I'm a creative board games enthusiast.",
+        title: `Hello, I'm 
+        <br>Adrián, and I'm a<br>
+        Front-End.`,
+        subtitle: "Passionate senior Front-End developer with a love for innovative projects and testing.<br> Board game creator in my free time.",
         aboutMe: {
             title: "About me",
+            firstSection: {
+                description1: "My first encounter with computers was thanks to my cousin, a programmer. When I saw him in action, I found it fascinating, and I decided to follow in his footsteps.",
+                descriptionBox: "Now I dedicate myself to transforming designs into<br> functional experiences.",
+                description2: "After <strong>8 years working in web development</strong> and <strong>4 years focusing on Front-End</strong>, I have had the opportunity to work on a wide range of projects, allowing me to improve teamwork, coordination, and leadership of development teams, as well as refine my programming logic."
+            },
+            secondSection: {
+                description1: "Outside the field of computer science, I enjoy creating board games, as it is a <strong>process similar to software development.</strong>",
+                description2: "First, <strong>the basic idea is conceived</strong>. Then, <strong>a prototype is created</strong>, defining the rules and reviewing it to eliminate possible errors. After that, it <strong>is tested</strong> repeatedly until it is polished. Finally, it <strong>is presented to the user</strong> to obtain the necessary feedback and perfect it. The best part is when, once it's finished, <strong>people enjoy your product.</strong>",
+                descriptionBox: "I aspire to continue working in Front-End to<br> design new interfaces and elevate my knowledge<br> of programming and logic."
+            },
             description: `My first encounter with computer science was thanks to my cousin, a programmer. The first time I saw him in action, it was fascinating. Now, many years later, I transform designs into functional experiences from the Front-End.
             
             Since I began my journey in web development 8 years ago, with the last <strong class="text-primary">four years centered on Front-End part</strong>. I've had the opportunity to work on various projects, allowing me to develop skills such as <strong class="text-primary">teamwork, coordination, and team leadership</strong>, as well as improving my programming logic, among others.
@@ -69,35 +81,35 @@ export default {
             title: "Project",
             proyect: {
                 1: {
-                    image: 'Busscollab.jpg',
+                    image: 'Busscollab.png',
                     url: 'https://www.busscollab.com',
                     title: 'Busscollab',
                     description: "Busscollab is a marketplace for builders, where they can exchange products, manage stock, and sell products.",
                     tecnologies: "Sass-F, HTML5-F, Nuxt-F, Vue.js-F, Javascript-F, Css-F"
                 },
                 2: {
-                    image: 'Youmalou.jpg',
+                    image: 'Youmalou.png',
                     url: 'https://youmalou.com',
                     title: 'Youmalou',
                     description: "Youmalou is a travel sales company. On this website, you can purchase your flights or reserve hotel rooms",
                     tecnologies: "Sass-F, HTML5-F, Nuxt-F, Vue.js-F, Javascript-F, Css-F"
                 },
                 3: {
-                    image: 'idc.jpg',
+                    image: 'idc.png',
                     url: 'https://es.idcgames.com/',
                     title: 'IDC Games',
                     description: "The project consists of the creation of a user profile on the web (played hours, data changes, profile changes, etc.).",
                     tecnologies: "Sass-F, HTML5-F, Vue.js-F, Javascript-F, Css-F, Php-B, Laravel-B",
                 },
                 4: {
-                    image: 'cms.jpg',
+                    image: 'cms.png',
                     url: 'https://canaldenunciascms.com/',
                     title: 'Canal de denuncias',
                     description: "It is a web application for medium-sized companies to have an internal reporting application for employees and suppliers",
                     tecnologies: "Sass-F, HTML5-F, Vue.js-F, Css-F, Php-B, Mysql-B"
                 },
                 5: {
-                    image: 'digitalizatutienda.jpg',
+                    image: 'digitalizatutienda.png',
                     url: 'https://digitalizatutienda.com/',
                     title: 'Digitaliza tu tienda',
                     description: "It's a website with a custom theme and plugins built with WordPress to showcase relevant company information.",
