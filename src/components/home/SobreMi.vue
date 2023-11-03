@@ -1,8 +1,8 @@
 <template>
     <v-container class="sections">
         <v-row class="mt-0">
-            <v-col class="py-0 pr-md-6" order="3" order-md="1" cols="12" md="6" lg="5" align-self="center">
-                <v-img class="rounded-circle" src="img/logo.jpg" srcset="img/logo.jpg 400w, img/adrian_rodenas_pico.jpg 512w" sizes="(max-width:400px) 400px, 512px"></v-img>
+            <v-col class="py-0 pr-md-6 firstImage" order="3" order-md="1" cols="12" md="6" lg="5" align-self="center">
+                <v-img :eager="true" class="firstImage rounded-circle" src="img/logo.jpg" srcset="img/logo.jpg 400w, img/adrian_rodenas_pico.jpg 512w" sizes="(max-width:400px) 400px, 512px" :options="{ root: null, rootMargin: '20px', threshold: 0.05}"></v-img>
             </v-col>
             
             <v-col class="pt-0 pl-md-6 pl-lg-8 pr-md-0" order="1" order-md="3" cols="12" md="6" lg="7">
@@ -27,14 +27,22 @@
                 </p>
             </v-col>
             <v-col class="pt-0 pl-md-6" order="1" order-md="3" cols="12" md="6" lg="5" align-self="center">
-                <v-img class="rounded-circle" src="img/game-image-reduce.jpg" srcset="img/game-image-reduce.jpg 400w, img/game-image-reduce.jpg 512w" sizes="(max-width:400px) 400px, 512px"></v-img>
+                <v-img :eager="true" :options="{'threshold': 0}" class="rounded-circle" src="img/game-image-reduce.jpg" srcset="img/game-image-reduce.jpg 400w, img/game-image-reduce.jpg 512w" sizes="(max-width:400px) 400px, 512px"></v-img>
             </v-col>
         </v-row>
     </v-container>
 </template>
 
 <script setup lang="ts">
+    // import { onMounted,ref } from 'vue';
+    // import type {Ref} from 'vue';
+    // const firstImage: Ref<Element> | Ref<null> = ref(document.querySelector(".firstImage"));
 
+    // onMounted(() => {
+    //     console.log(firstImage.value)
+    //     firstImage.value = document.querySelector(".firstImage");
+    //     console.log(firstImage.value)
+    // })
 </script>
 
 <style scoped>
