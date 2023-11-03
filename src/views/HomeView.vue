@@ -107,13 +107,16 @@
   </v-container>
 
   <v-container >
-    <v-footer>
+    <v-footer class="d-flex flex-column pb-2">
       
       <p class="text-center w-100">
-        2023 - Adrián Ródenas <a class="hover-icon-linkedin inline-block" target="_blank" href="https://www.linkedin.com/in/adrian-rodenas-pico/">
-        <v-icon size="large" color="shades-black" >mdi-linkedin</v-icon>
-      </a>
+        2023 - Adrián Ródenas
       </p>
+      <div class="d-flex justify-center mt-4 icons-footer">
+        <a class="hover-icon-linkedin inline-block" target="_blank" href="https://www.linkedin.com/in/adrian-rodenas-pico/"><v-icon size="large" color="shades-black" >mdi-linkedin</v-icon></a>
+        <a class="hover-icon-linkedin inline-block" target="_blank" href="mailto:adrian.ropi@gmail.com"><v-icon size="large" color="shades-black" >mdi-email</v-icon></a>
+      </div>
+      
     </v-footer>
   </v-container>
 </template>
@@ -154,4 +157,7 @@
     }
   }
   
+  .icons-footer {
+    gap: 15px;
+  }
 </style>
