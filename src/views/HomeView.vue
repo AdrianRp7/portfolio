@@ -1,37 +1,52 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, nextTick } from 'vue';
+  import { ref, onMounted, onUnmounted, nextTick } from 'vue';
   import RoadMap from '@/components/home/RoadMap.vue'
   import Skills from '@/components/home/Skills.vue'
   import SobreMi from '@/components/home/SobreMi.vue'
   import Proyects from '@/components/home/Proyects.vue'
+  import type RoadMapI from '@/interfaces/RoadMapI';
 
+  const itemsEducation: RoadMapI[] = [
+            {
+            id:"1",
+            color: "primary",
+            },
+            {
+                id:"2",
+                color: "primary"
+            },
+            {
+                id:"3",
+                color: "primary"
+            },
+            {
+                id:"4",
+                color: "primary"
+            },
+            {
+                id:"5",
+                color: "primary"
+            },
+            {
+                id:"6",
+                color: "primary"
+            },
+            {
+                id:"7",
+                color: "primary"
+            },
+    ]
 
   //Detect when section is visible
-function hightLight(entries: IntersectionObserverEntry[], observer: IntersectionObserver) : void {
-      console.log("entro");
+  function hightLight(entries: IntersectionObserverEntry[], observer: IntersectionObserver) : void {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
               document.querySelectorAll(".section-href").forEach((element) => {
                 element.classList.remove('hightlight');
+                if('#' + entry.target.id === element.getAttribute("href")) {
+                  element.classList.add('hightlight');
+                }
               })
-              // console.log("hola")
-              console.log(entry.target.id)
-              
-              switch(entry.target.id) {
-                case "about":
-                  document.querySelectorAll(".section-href")[0].classList.add('hightlight')
-                  break;
-                case "experience":
-                  document.querySelectorAll(".section-href")[1].classList.add('hightlight')
-                  break;
-                case "projects":
-                  document.querySelectorAll(".section-href")[2].classList.add('hightlight')
-                  break;
-                case "skills":
-                  document.querySelectorAll(".section-href")[3].classList.add('hightlight')
-                  break;
-              }
-              //observer.unobserve(entry.target);
           }
       });
   }
@@ -48,7 +63,6 @@ function hightLight(entries: IntersectionObserverEntry[], observer: Intersection
       })
   })
   onUnmounted(() => observer.disconnect());
-
 
 </script>
 
@@ -86,6 +100,9 @@ function hightLight(entries: IntersectionObserverEntry[], observer: Intersection
     <Proyects id="projects"></Proyects>
   </v-container>
   <v-container fluid>
+    <RoadMap id="education" :name="'education'" :arrayName="'educations'" :items="itemsEducation"></RoadMap>
+  </v-container>
+  <v-container fluid class="lighter">
     <Skills id="skills"></Skills>
   </v-container>
 

@@ -24,6 +24,10 @@ body #app .v-layout{
         white-space: pre-line;
     }
 
+    .white-space-wrap {
+        white-space: pre-line!important;
+    }
+
     .position-relative {
         position: relative;
     }

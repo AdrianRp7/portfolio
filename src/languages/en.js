@@ -5,6 +5,7 @@ export default {
         skill: "Skills",
         projects: "Proyectos",
         experience: "Experience",
+        education: "Formation",
         languages: "Change Language",
         languagesText: {
             es: "Spanish",
@@ -47,7 +48,7 @@ export default {
                     "title": "Full-Stack Web Developer Vue | Php",
                     "subtitle": "Adrián Ródenas Picó",
                     "functions": "Freelancer",
-                    "dates": "Aug 2019 - Present · 4 years 3 months",
+                    "dates": "Aug 2019 - Present (4 years 4 months)",
                     "description": "I have solid experience as a Fullstack Developer, with a specialized focus on frontend development using Vue. Over the last 4 years, I have primarily dedicated my time to working with Vue and Nuxt, honing my skills with these technologies and successfully completing projects that have expanded my knowledge in this area.\n\nAdditionally, I am proficient in PHP and the Laravel framework on the backend.",
                     skills: "Sass-F, HTML5-F, Nuxt-F, Vue.js-F, Javascript-F, Css-F, Typescript-F, Php-B, Laravel-B, SQL-B, Mysql-B, Git-B"
                 },
@@ -55,7 +56,7 @@ export default {
                     "title": "Co-founder",
                     "subtitle": "Digitalize Your Store",
                     "functions": "Freelancer",
-                    "dates": "Mar 2020 - Sep 2021 · 1 year 7 months",
+                    "dates": "Mar 2020 - Sep 2021 (1 year 7 months)",
                     "description": "Digitization and digital transformation of businesses:\n\n- Development of web stores and applications\n- Maintenance and digital repairs\n- Automations and integrations\n- Custom software development\n- Consultancy",
                     skills: "Sass-F, HTML5-F, Nuxt-F, Vue.js-F, Javascript-F, Css-F, Jquery-F, Php-B, Laravel-B, SQL-B, Mysql-B, Wordpress-B, Prestashop-B, Git-B"
                 },
@@ -63,7 +64,7 @@ export default {
                     "title": "Software Developer and Analyst",
                     "subtitle": "Everis",
                     "functions": "Analyst/Developer",
-                    "dates": "Jan 2016 - Mar 2018 · 2 years 3 months",
+                    "dates": "Jan 2016 - Mar 2018 (2 years 3 months)",
                     "description": "Software development for Sabadell using Java and PL/SQL script development. Incident resolution, functional requirements gathering, testing, and use of REST services.",
                     skills: "Java-B, Pl/SQL-B, SQL-B, Git-B"
                 },
@@ -71,7 +72,7 @@ export default {
                     "title": "Software Developer",
                     "subtitle": "Banc Sabadell",
                     "functions": "Developer",
-                    "dates": "Apr 2015 - Jan 2016 · 10 months",
+                    "dates": "Apr 2015 - Jan 2016 (10 months)",
                     "description": "Software development for Bantotal using Java and PL/SQL script development. Incident resolution and gathering of functional requirements.",
                     skills: "Java-B, Pl/SQL-B, SQL-B, Git-B"
                 }
@@ -115,6 +116,67 @@ export default {
                     description: "It's a website with a custom theme and plugins built with WordPress to showcase relevant company information.",
                     tecnologies: "HTML5-F, Javascript-F, Css-F, Jquery-F, Php-B, Mysql-B, Wordpress-B"
                 },
+            }
+        },
+        education: {
+            title: "Formation",
+            educations: {
+                1: {
+                    title: "Graduate in Computer Engineering",
+                    subtitle: "University of Alicante",
+                    functions: "",
+                    dates: "Sep. 2010 - Sep. 2015 (5 years)",
+                    description: "The general objective of the Graduate in Computer Engineering is to prepare professionals with a broad and solid education to lead and carry out tasks in all phases of the life cycle of systems, applications, and products that solve problems in any field of Information and Communication Technologies, applying their scientific knowledge and the methods and techniques of engineering.",
+                    skills: ""
+                },
+                2: {
+                    title: "Cambridge English: Preliminary (PET) - B1",
+                    subtitle: "Cambridge English Language Assessment",
+                    functions: "",
+                    dates: "Date of issue: August 2015",
+                    description: "",
+                    skills: ""
+                },
+                3: {
+                    title: "Master's in Computer Engineering",
+                    subtitle: "University of Alicante",
+                    functions: "",
+                    dates: "Sep. 2016 - Jan. 2018 · (1 year 5 months)",
+                    description: "The objective of the Master's in Computer Engineering is to provide the ability to lead, plan, and supervise multidisciplinary teams. It also imparts other knowledge such as mathematical modeling, calculation, and simulation in technological and corporate engineering centers.",
+                    skills: ""
+                },
+                4: {
+                    title: "Complete Web Development with HTML5, CSS3, JS AJAX PHP, and MySQL",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Year 2017",
+                    description: "The objective of this course is to give you a solid foundation to start web development with CSS3, HTML5, JS, PHP, and MYSQL. With numerous examples and exercises to help you apply the acquired knowledge.",
+                    skills: ""
+                },
+                5: {
+                    title: "CSS Grid, Flexbox, SASS, and GULP",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Year 2019",
+                    description: "The goal of this course is to teach the user how to handle Sass, CSS Grid, and Flexbox.",
+                    skills: ""
+                },
+                6: {
+                    title: "Development of APIs and Websites with Laravel PHP from Scratch",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Year 2019",
+                    description: "The objective of this course is to learn everything you need about the Laravel Framework to create APIs and websites with it.",
+                    skills: ""
+                },
+                7: {
+                    title: "Vue JS - Learn to Create Modern Web Applications with Vue",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Year 2019",
+                    description: "The goal of the course is to learn the basic concepts of the framework and its utilities to start working on the creation of websites and applications.",
+                    skills: ""
+                }
             }
         }
     }

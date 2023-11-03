@@ -5,6 +5,7 @@ export default {
         skill: "Competencias",
         experience: "Experiencia",
         projects: "Proyectos",
+        education: "Educación",
         languages: "Cambiar Idioma",
         languagesText: {
             es: "Español",
@@ -48,7 +49,7 @@ export default {
                     title: "Desarrollador web full-stack Vue | Php",
                     subtitle: "Adrián Ródenas Picó",
                     functions: "Autónomo",
-                    dates: "ago. 2019 - actualidad · 4 años 3 meses",
+                    dates: "ago. 2019 - actualidad (4 años 4 meses)",
                     description: `Tengo una sólida experiencia como Fullstack Developer, con un enfoque especializado en el desarrollo frontend utilizando Vue. Durante los últimos años 4 años, he dedicado mi tiempo principalmente a trabajar con Vue y Nuxt perfeccionando mis habilidades con estas tecnología y llevando a cabo proyectos exitosos que han ampliado mi conocimiento en este ámbito. 
     
                     Además de eso, también me manejo con PHP y el framework de Laravel en el backend.`,
@@ -58,7 +59,7 @@ export default {
                     title: "Socio fundador",
                     subtitle: "Digitaliza tu tienda",
                     functions: "Autónomo",
-                    dates: "mar. 2020 - sept. 2021 · 1 año 7 meses",
+                    dates: "mar. 2020 - sept. 2021 (1 año 7 meses)",
                     description: `Digitalización y transformación digital de negocios:
     
                     - Desarrollo de tiendas web y aplicaciones
@@ -72,7 +73,7 @@ export default {
                     title: "Desarrollador y analista de software",
                     subtitle: " Everis",
                     functions: "Analista/desarrollador",
-                    dates: "ene. 2016 - mar. 2018 · 2 años 3 meses",
+                    dates: "ene. 2016 - mar. 2018 (2 años 3 meses)",
                     description: `Desarrollo de software para Sabadell con Java y desarrollo de scripts PL/SQL. Resolución de incidencias, toma de requisitos funcionales, testing y uso de servicios REST.`,
                     skills: "Java-B, Pl/SQL-B, SQL-B, Git-B"
                 },
@@ -80,7 +81,7 @@ export default {
                     title: "Desarrollador de software",
                     subtitle: "Banc Sabadell ",
                     functions: "Desarrollador",
-                    dates: "abr. 2015 - ene. 2016 · 10 meses",
+                    dates: "abr. 2015 - ene. 2016 (10 meses)",
                     description: `Desarrollo de software para Bantotal con Java y desarrollo de scripts PL/SQL. Resolución de incidencias y toma de requisitos funcionales.`,
                     skills: "Java-B, Pl/SQL-B, SQL-B, Git-B"
                 } 
@@ -124,6 +125,67 @@ export default {
                     description: "Es una página con un tema y plugins hechos a medida con wordpress para mostrar información relevante de la empresa.",
                     tecnologies: "HTML5-F, Javascript-F, Css-F, Jquery-F, Php-B, Mysql-B, Wordpress-B"
                 },
+            }
+        },
+        education: {
+            title: "Educación",
+            educations: {
+                1: {
+                    title: "Graduado en Ingeniería Informática",
+                    subtitle: "Universidad de Alicante",
+                    functions: "",
+                    dates: "sep. 2010 - sep. 2015 (5 años)",
+                    description: `El objetivo general del título de Graduado/a en Ingeniería Informática es preparar profesionales con una formación amplia y sólida que les prepare para dirigir y realizar las tareas de todas las fases del ciclo de vida de sistemas, aplicaciones y productos que resuelvan problemas de cualquier ámbito de las Tecnologías de la Información y las Comunicaciones, aplicando su conocimiento científico y los métodos y técnicas propios de la ingeniería.`,
+                    skills: ""
+                },
+                2: {
+                    title: "Cambridge English: Preliminary (PET) - B1",
+                    subtitle: " Cambridge English Language AssessmentCambridge English Language Assessment",
+                    functions: "",
+                    dates: "Fecha de expedición: agosto 2015",
+                    description: ``,
+                    skills: ""
+                },
+                3: {
+                    title: "Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Año 2017",
+                    description: `El objetivo de este curso, es darte una base sólida para empezar a desarrollar en la web con CSS3, HTML5, JS, PHP y MYSQL. Con multitud de ejemplos y ejercicios, que ayudarán a poner en práctica los conocimeintos adquiridos. `,
+                    skills: ""  
+                },
+                4: {
+                    title: "Master en Ingeniería Informática",
+                    subtitle: "Universidad de Alicante",
+                    functions: "",
+                    dates: "sep. 2016 - ene. 2018 · (1 año 5 meses)",
+                    description: `El objetivo del Master de Ingeniería Informática, es dar la capacidad para dirigir, planificar y supervisar equipos multidisciplinares. Además de dar otros conocimientos como Modelado matemático, cálculo y simulación en centros tecnológicos y de ingeniería de empresa.`,
+                    skills: ""
+                },
+                5: {
+                    title: "CSS Grid, Flexbox, SASS y GULP",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Año 2019",
+                    description: `El objetivo de este curso, es enseñar al usuario a manejar Sass, css grid y Flexbox`,
+                    skills: ""  
+                },
+                6: {
+                    title: "Desarrollo de APIs y Sitios Web con Laravel PHP de Cero.",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Año 2019",
+                    description: `El objetivo de este curso, es aprender todo lo necesario del Framework de Laravel, para poder crear APIs y sitios web con el mismo.`,
+                    skills: ""  
+                },
+                7: {
+                    title: "Vue JS - Aprende a Crear Aplicaciones Web Modernas con Vue",
+                    subtitle: "Udemy",
+                    functions: "",
+                    dates: "Año 2019",
+                    description: `El objetivo del curso, es aprender los conceptos básicos del framework y sus utilidades para poder empezar a trabajar en la creación de webs y aplicaciones.`,
+                    skills: ""  
+                }
             }
         }
     },

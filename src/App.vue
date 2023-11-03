@@ -31,6 +31,9 @@ const drawer: Ref<boolean> = ref(false);
           <a class="text-black mb-4" href="#projects">
             <v-btn flat class="text-capitalize text-grey-darken-4 font-weight-semibold600"  size="small">{{ $t('navbar.projects') }}</v-btn>
           </a>
+          <a class="text-black mb-4" href="#education">
+            <v-btn flat class="text-capitalize text-grey-darken-4 font-weight-semibold600"  size="small">{{ $t('navbar.education') }}</v-btn>
+          </a>
           <a class="text-black mb-4" href="#skills">
             <v-btn flat class="text-capitalize text-grey-darken-4 font-weight-semibold600"  size="small">{{ $t('navbar.skill') }}</v-btn>
           </a>
@@ -85,6 +88,9 @@ const drawer: Ref<boolean> = ref(false);
               </a>
               <a class="text-black section-href" href="#projects">
                 <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.projects') }}</v-btn>
+              </a>
+              <a class="text-black section-href" href="#education">
+                <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.education') }}</v-btn>
               </a>
               <a class="text-black section-href" href="#skills">
                 <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.skill') }}</v-btn>
