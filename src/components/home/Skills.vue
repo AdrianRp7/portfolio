@@ -2,7 +2,7 @@
     <v-container class="sections">
         <v-row>
             <v-col cols="12">
-                <h2 class="text-h4 mb-5 text-primary">{{ $t("home.skills.title") }}</h2>
+                <h2 class="text-h1 text-shades-black mb-7">{{ $t("home.skills.title") }}</h2>
                 <!-- <p class="mt-6 text-grey-darken-3">{{ $t("home.skills.subtitle") }}</p> -->
                 <!-- <v-img :src="product.image" ></v-img> -->
                 <!-- <IconCss3></IconCss3> -->

@@ -7,34 +7,34 @@
   import type RoadMapI from '@/interfaces/RoadMapI';
 
   const itemsEducation: RoadMapI[] = [
-            {
-            id:"1",
-            color: "primary",
-            },
-            {
-                id:"2",
-                color: "primary"
-            },
-            {
-                id:"3",
-                color: "primary"
-            },
-            {
-                id:"4",
-                color: "primary"
-            },
-            {
-                id:"5",
-                color: "primary"
-            },
-            {
-                id:"6",
-                color: "primary"
-            },
-            {
-                id:"7",
-                color: "primary"
-            },
+      {
+      id:"1",
+      color: "primary",
+      },
+      {
+          id:"2",
+          color: "primary"
+      },
+      {
+          id:"3",
+          color: "primary"
+      },
+      {
+          id:"4",
+          color: "primary"
+      },
+      {
+          id:"5",
+          color: "primary"
+      },
+      {
+          id:"6",
+          color: "primary"
+      },
+      {
+          id:"7",
+          color: "primary"
+      },
     ]
 
   //Detect when section is visible
