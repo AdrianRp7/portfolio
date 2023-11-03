@@ -27,7 +27,7 @@
                 </p>
             </v-col>
             <v-col class="pt-0 pl-md-6" order="1" order-md="3" cols="12" md="6" lg="5" align-self="center">
-                <v-img :eager="true" :options="{'threshold': 0}" class="rounded-circle" src="img/game-image-reduce.jpg" srcset="img/game-image-reduce.jpg 400w, img/game-image-reduce.jpg 512w" sizes="(max-width:400px) 400px, 512px"></v-img>
+                <v-img :options="{ 'rootMargin': '581px', 'threshold': 1}" class="rounded-circle" src="img/game-image-reduce.jpg" srcset="img/game-image-reduce.jpg 400w, img/game-image-reduce.jpg 512w" sizes="(max-width:400px) 400px, 512px"></v-img>
             </v-col>
         </v-row>
     </v-container>
