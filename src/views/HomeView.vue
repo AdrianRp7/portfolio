@@ -36,17 +36,82 @@
           color: "primary"
       },
     ]
+    
+  //   function hightLight(entries: IntersectionObserverEntry[], observer: IntersectionObserver) : void {
+  //     entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           let accentBar: Element | null = document.querySelector(".accent-bar");
+  //           let anterior: Element | null = document.querySelector(".hightlight");
+            
 
+  //           let actual: Element | null = null;
+  //           document.querySelectorAll(".section-href").forEach((element) => {
+  //             element.classList.remove('hightlight');
+  //             if('#' + entry.target.id === element.getAttribute("href")) {
+  //               actual = element;
+  //               element.classList.add('hightlight');
+  //             }
+  //           })
+            
+  //           if(anterior !== null && actual !== null){
+  //             //It's right
+  //             let actualLeft: number = accentBar.querySelector(".v-btn__content").style.getPropertyValue("--left").length === 0 ? 0 : parseInt(accentBar.querySelector(".v-btn__content").style.getPropertyValue("--left").slice(0, -2));
+  //             console.log(actualLeft);
+  //             if(anterior?.compareDocumentPosition(actual) == 4) {
+  //               accentBar.querySelector(".v-btn__content").style.setProperty("--left", (anterior.offsetWidth + actualLeft) + "px");
+  //             } else {
+  //               //Cambia el left por actual.offset
+  //               accentBar.querySelector(".v-btn__content").style.setProperty("--left", (actualLeft - actual.offsetWidth) + "px");
+  //             }
+
+              
+  //             //anterior.querySelector(".v-btn__content::after").style.opacity = 1;
+
+  //             accentBar.querySelector(".v-btn__content").style.setProperty("--width", (actual.offsetWidth - 28) + "px");
+
+  //           } 
+            
+  //           // if(anterior !== null && actual !== null){
+  //           //   console.log(anterior.compareDocumentPosition(actual))
+  //           //   console.log() 
+  //           //   console.log(actual.offsetLeft)
+  //           //   console.log(actual.offsetWidth)
+  //           //   console.log(anterior.offsetLeft)
+  //           // }
+  //         }
+  //     });
+  // }
   //Detect when section is visible
   function hightLight(entries: IntersectionObserverEntry[], observer: IntersectionObserver) : void {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
-              document.querySelectorAll(".section-href").forEach((element) => {
-                element.classList.remove('hightlight');
-                if('#' + entry.target.id === element.getAttribute("href")) {
-                  element.classList.add('hightlight');
-                }
-              })
+            let accentBar: Element | null = document.querySelector(".accent-bar");
+            let offsetLeftInitial: Element | null = document.querySelector(".v-toolbar__append .d-none.d-md-block").offsetLeft;
+
+          
+            
+
+            let actual: Element | null = null;
+            document.querySelectorAll(".section-href").forEach((element) => {
+              element.classList.remove('hightlight');
+              if('#' + entry.target.id === element.getAttribute("href")) {
+                actual = element;
+                element.classList.add('hightlight');
+              }
+            })
+            
+            if(actual !== null){
+              accentBar.querySelector(".v-btn__content").style.setProperty("--left", (actual.offsetLeft - offsetLeftInitial) + "px");
+              accentBar.querySelector(".v-btn__content").style.setProperty("--width", (actual.offsetWidth - 28) + "px");
+            } 
+            
+            // if(anterior !== null && actual !== null){
+            //   console.log(anterior.compareDocumentPosition(actual))
+            //   console.log() 
+            //   console.log(actual.offsetLeft)
+            //   console.log(actual.offsetWidth)
+            //   console.log(anterior.offsetLeft)
+            // }
           }
       });
   }
@@ -55,7 +120,7 @@
       rootMargin: '0px',
       threshold: 0.40
   };
-  
+ 
   const observer = new IntersectionObserver(hightLight, options);
   onMounted(() => {
       document.querySelectorAll('.sections').forEach(element => {

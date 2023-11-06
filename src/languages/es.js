@@ -140,7 +140,7 @@ export default {
                 },
                 2: {
                     title: "Cambridge English: Preliminary (PET) - B1",
-                    subtitle: " Cambridge English Language AssessmentCambridge English Language Assessment",
+                    subtitle: " Cambridge English Language Assessment",
                     functions: "",
                     dates: "Fecha de expedición: agosto 2015",
                     description: ``,

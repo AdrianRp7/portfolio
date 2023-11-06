@@ -80,7 +80,7 @@ const drawer: Ref<boolean> = ref(false);
         </template>
         <template v-slot:append >
           <div class="d-none d-md-block">
-              <a class="text-black section-href" href="#about">
+              <a class="text-black section-href accent-bar" href="#about">
                 <v-btn flat class="text-capitalize text-body-2 text-grey-darken-4 font-weight-semibold600 border-botton-selected" size="small">{{ $t('navbar.aboutMe') }}</v-btn>
               </a>
               <a class="text-black section-href" href="#experience">
@@ -186,17 +186,60 @@ const drawer: Ref<boolean> = ref(false);
   }
 }
 
-.hightlight .border-botton-selected :deep(.v-btn__content){
+.section-href:first-of-type .border-botton-selected :deep(.v-btn__content){
   position: relative;
   &::after {
     content: "";
-    width: 100%;
+    // width: 100%;
     height: 6px;
     background-color: rgb(var(--v-theme-secondary));
     display: block;
     position: absolute;
     top: 85%;
     border-radius: 10px;
+    //opacity: 0;
+    // animation: center-to-right 0.1s ease-out;
+    width: var(--width, 100%);
+    left: var(--left, 0);
+    transition: left 250ms;
+  }
+}
+
+@keyframes left-to-center{
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes center-to-left{
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -20px;
+  }
+}
+@keyframes right-to-center{
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes center-to-right{
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    right: -20px;
+    opacity: 0;
   }
 }
 </style>
