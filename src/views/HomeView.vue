@@ -86,7 +86,7 @@
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
             let accentBar: Element | null = document.querySelector(".accent-bar");
-            let offsetLeftInitial: Element | null = document.querySelector(".v-toolbar__append .d-none.d-md-block").offsetLeft;
+            let offsetLeftInitial: number | null = document.querySelector(".v-toolbar__append .d-none.d-md-block").offsetLeft;
 
           
             
@@ -102,7 +102,7 @@
             
             if(actual !== null){
               accentBar.querySelector(".v-btn__content").style.setProperty("--left", (actual.offsetLeft - offsetLeftInitial) + "px");
-              accentBar.querySelector(".v-btn__content").style.setProperty("--width", (actual.offsetWidth - 28) + "px");
+              accentBar.querySelector(".v-btn__content").style.setProperty("--width", (actual.offsetWidth - 28) + "px"); //28 is equal to padding button
             } 
             
             // if(anterior !== null && actual !== null){
