@@ -2,10 +2,24 @@
 import { ref, onMounted, onUnmounted, nextTick } from 'vue';
 import type { Ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router';
+import {changeActualElementNavbar, isAElement} from '@/interfaces/navbarAccentFunction'
 
 const drawer: Ref<boolean> = ref(false);
 
-
+  //When the language change we need to change the actual accent bar width because we use absolute values for the animation 
+  //Example competencias to skills
+  function updateNavbarAccentBar() {
+    setTimeout(() => {
+      const hightLightElement: HTMLElement | null = document.querySelector<HTMLElement>('.hightlight');
+      if (isAElement(hightLightElement)) {
+        const hrefCheck: string | null = hightLightElement.getAttribute("href");
+        if(hrefCheck) {
+          console.log(hrefCheck.slice(1,hrefCheck.length))
+          changeActualElementNavbar(hrefCheck.slice(1,hrefCheck.length));
+        }
+      }
+    },100)
+  }
 
 </script>
 
@@ -60,6 +74,7 @@ const drawer: Ref<boolean> = ref(false);
                     size="small"
                     density="compact"
                     class="text-capitalize text-grey-darken-4"
+                    @click="updateNavbarAccentBar()"
                   >
                     {{ $t(`navbar.languagesText.${locale}`) }}
                 </v-btn>
@@ -118,7 +133,7 @@ const drawer: Ref<boolean> = ref(false);
                     flat
                     size="small"
                     class="text-capitalize text-grey-darken-4"
-                    
+                    @click="updateNavbarAccentBar()"
                   >
                     {{ $t(`navbar.languagesText.${locale}`) }}
                 </v-btn>

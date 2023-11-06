@@ -5,6 +5,7 @@
   import SobreMi from '@/components/home/SobreMi.vue'
   import Proyects from '@/components/home/Proyects.vue'
   import type RoadMapI from '@/interfaces/RoadMapI';
+  import {changeActualElementNavbar} from '@/interfaces/navbarAccentFunction'
 
   const itemsEducation: RoadMapI[] = [
       {
@@ -82,41 +83,12 @@
   //     });
   // }
 
-  function isAElement(elemento: HTMLElement | null): elemento is HTMLElement {
-    return elemento instanceof HTMLElement;
-  } 
-
+  
   //Detect when section is visible
   function hightLight(entries: IntersectionObserverEntry[], observer: IntersectionObserver) : void {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            let accentBar: HTMLElement | null = document.querySelector<HTMLElement>(".accent-bar");
-            let offsetLeftInitial: number | undefined = document.querySelector<HTMLElement>(".v-toolbar__append .d-none.d-md-block")?.offsetLeft;
-            
-          
-            
-
-            let actual: HTMLElement | null = null as HTMLElement | null;
-            document.querySelectorAll<HTMLElement>(".section-href").forEach((element: HTMLElement) => {
-              element.classList.remove('hightlight');
-              if('#' + entry.target.id === element.getAttribute("href")) {
-                actual = element;
-                element.classList.add('hightlight');
-              }
-            })
-            
-            if(isAElement(accentBar) && isAElement(actual)){
-              accentBar.querySelector<HTMLElement>(".v-btn__content")?.style.setProperty("--left", (actual.offsetLeft - (offsetLeftInitial ?? 0)) + "px");
-              accentBar.querySelector<HTMLElement>(".v-btn__content")?.style.setProperty("--width", (actual.offsetWidth - 28) + "px"); //28 is equal to padding button
-            } 
-            
-            // if(anterior !== null && actual !== null){
-            //   console.log(anterior.compareDocumentPosition(actual))
-            //   console.log() 
-            //   console.log(actual.offsetLeft)
-            //   console.log(actual.offsetWidth)
-            //   console.log(anterior.offsetLeft)
-            // }
+            changeActualElementNavbar(entry.target.id);
           }
       });
   }
