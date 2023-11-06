@@ -81,18 +81,23 @@
   //         }
   //     });
   // }
+
+  function isAElement(elemento: HTMLElement | null): elemento is HTMLElement {
+    return elemento instanceof HTMLElement;
+  } 
+
   //Detect when section is visible
   function hightLight(entries: IntersectionObserverEntry[], observer: IntersectionObserver) : void {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            let accentBar: Element | null = document.querySelector(".accent-bar");
-            let offsetLeftInitial: number | null = document.querySelector(".v-toolbar__append .d-none.d-md-block").offsetLeft;
-
+            let accentBar: HTMLElement | null = document.querySelector<HTMLElement>(".accent-bar");
+            let offsetLeftInitial: number | undefined = document.querySelector<HTMLElement>(".v-toolbar__append .d-none.d-md-block")?.offsetLeft;
+            
           
             
 
-            let actual: Element | null = null;
-            document.querySelectorAll(".section-href").forEach((element) => {
+            let actual: HTMLElement | null = null as HTMLElement | null;
+            document.querySelectorAll<HTMLElement>(".section-href").forEach((element: HTMLElement) => {
               element.classList.remove('hightlight');
               if('#' + entry.target.id === element.getAttribute("href")) {
                 actual = element;
@@ -100,9 +105,9 @@
               }
             })
             
-            if(actual !== null){
-              accentBar.querySelector(".v-btn__content").style.setProperty("--left", (actual.offsetLeft - offsetLeftInitial) + "px");
-              accentBar.querySelector(".v-btn__content").style.setProperty("--width", (actual.offsetWidth - 28) + "px"); //28 is equal to padding button
+            if(isAElement(accentBar) && isAElement(actual)){
+              accentBar.querySelector<HTMLElement>(".v-btn__content")?.style.setProperty("--left", (actual.offsetLeft - (offsetLeftInitial ?? 0)) + "px");
+              accentBar.querySelector<HTMLElement>(".v-btn__content")?.style.setProperty("--width", (actual.offsetWidth - 28) + "px"); //28 is equal to padding button
             } 
             
             // if(anterior !== null && actual !== null){
