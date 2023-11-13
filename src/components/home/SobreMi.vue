@@ -18,7 +18,7 @@
         </v-row>
         <v-divider color="secondary" class="my-10" thickness="2"></v-divider>
         <v-row class="mt-0">
-            <v-col class="pt-0 pr-md-6 pl-lg-7 pl-0" order="3" order-md="1" cols="12" md="6" lg="7" >
+            <v-col class="pt-0 pr-md-6 pl-lg-7 pl-0" order="2" order-md="1" cols="12" md="6" lg="7" >
                 <p class="text-body-1 white-space text-shades-white" v-html="$t('home.aboutMe.secondSection.description1')">
                 </p>
                 <p class="mt-10 text-body-1 white-space text-shades-white" v-html="$t('home.aboutMe.secondSection.description2')">
@@ -26,7 +26,7 @@
                 <p class="mt-6 text-body-1 white-space text-shades-white box-important-text" v-html="$t('home.aboutMe.secondSection.descriptionBox')">
                 </p>
             </v-col>
-            <v-col class="pt-0 pl-md-6" order="1" order-md="3" cols="12" md="6" lg="5" align-self="center">
+            <v-col class="pt-0 pl-md-6" order="2" order-md="1" cols="12" md="6" lg="5" align-self="center">
                 <v-img :options="{ 'rootMargin': '581px', 'threshold': 1}" class="rounded-circle" src="img/game-image-reduce.jpg" srcset="img/game-image-reduce.jpg 400w, img/game-image-reduce.jpg 512w" sizes="(max-width:400px) 400px, 512px"></v-img>
             </v-col>
         </v-row>
